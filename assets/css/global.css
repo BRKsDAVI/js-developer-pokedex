@@ -3,6 +3,15 @@
     box-sizing: border-box;
 }
 
+#detail_btn{
+    border-radius: 10px;
+    border: none;
+    font-size: .6rem;
+    background-color: #d9d9d9;
+    color: #000;
+    cursor: pointer;
+}
+
 body {
     background-color: #f6f8fc;
 }
@@ -12,6 +21,23 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    box-shadow: 1px 1px 10px gray;
+}
+
+ol#detalhes {
+    background-color: #d3d3d378;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0.65rem;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    list-style: none;
+    position: fixed;
+    display: flex;
+    right: 100px;
+    top: 20px;
 }
 
 @media screen and (min-width: 992px) {

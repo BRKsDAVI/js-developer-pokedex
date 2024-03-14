@@ -13,6 +13,7 @@ function convertPokemonToLi(pokemon) {
 
             <div class="detail">
                 <ol class="types">
+                <button id="detail_btn" onclick="botaoclickado(${pokemon.number})">detail</button>
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
 
@@ -21,6 +22,10 @@ function convertPokemonToLi(pokemon) {
             </div>
         </li>
     `
+}
+
+function verDetalhes(pokemonId){
+    window.location.href = `details.html?id=${pokemonId}` 
 }
 
 function loadPokemonItens(offset, limit) {
